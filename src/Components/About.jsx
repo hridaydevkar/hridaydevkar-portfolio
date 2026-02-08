@@ -7,36 +7,26 @@
 import React from "react";
 
 /**
- * About background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
- * represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a image you
- * freely use on your site.
- */
-import image from "../images/motion-background.jpg";
-
-const imageAltText = "purple and blue abstract background";
-
-/**
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I work across the full development stack - backend APIs, frontend interfaces, native mobile apps, and hardware programming. My focus is on building reliable systems that scale. Recent work includes blockchain-based voting platforms, real-time IoT controllers, and ML-powered applications. Strong preference for Python and JavaScript ecosystems.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "Python & Flask",
+  "React & JavaScript",
+  "Mobile App Development",
+  "IoT & ESP32",
+  "PostgreSQL & Database Design",
+  "Machine Learning & AI",
+  "Blockchain Technology",
+  "Android Development",
+  "RESTful APIs",
+  "Cloud Deployment",
 ];
 
 /**
@@ -45,39 +35,60 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "Most of my projects involve complex integrations - whether it's connecting microcontrollers to mobile dashboards, implementing cryptographic security layers, or training neural networks for computer vision tasks. I prefer working on systems where multiple technologies intersect. Currently experimenting with distributed architectures and edge computing patterns.";
 
 const About = () => {
   return (
-    <section className="padding" id="about">
-      <img className="background" src={image} alt={imageAltText} />
-      <div
-        style={{
-          backgroundColor: "white",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
-          textAlign: "center",
-        }}
-      >
-        <h2>About Myself</h2>
-        <p className="large">{description}</p>
-        <hr />
-        <ul
-          style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
-          }}
-        >
-          {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+    <section className="padding" id="about" style={{
+      background: 'transparent',
+      minHeight: '100vh',
+      padding: '100px 150px',
+      maxWidth: '1600px',
+      margin: '0 auto'
+    }}>
+      <h2 style={{
+        fontSize: '48px',
+        fontWeight: '800',
+        marginBottom: '40px',
+        background: 'linear-gradient(135deg, #64C8FF, #50B4FF)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text'
+      }}>Who Am I?</h2>
+      
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '50px' }}>
+        <div>
+          <p style={{ marginBottom: '20px', fontSize: '18px', color: '#c0c0c0', lineHeight: '1.8' }}>{description}</p>
+          <p style={{ marginBottom: '20px', fontSize: '18px', color: '#c0c0c0', lineHeight: '1.8' }}>{detailOrQuote}</p>
+          
+          <div style={{ marginTop: '40px' }}>
+            <h3 style={{ marginBottom: '20px', fontSize: '24px', color: '#fff', fontWeight: '700', textShadow: '0 0 20px rgba(100, 200, 255, 0.2)' }}>Tech Stack & Expertise:</h3>
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+              gap: '10px'
+            }}>
+              {skillsList.map((skill) => (
+                <div key={skill} style={{
+                  fontFamily: '"Inter", sans-serif',
+                  fontSize: '15px',
+                  color: '#c0c0c0',
+                  paddingLeft: '20px',
+                  position: 'relative',
+                  fontWeight: '500'
+                }}>
+                  <span style={{
+                    position: 'absolute',
+                    left: '0',
+                    color: '#64C8FF',
+                    fontWeight: '700'
+                  }}>▹</span>
+                  {skill}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

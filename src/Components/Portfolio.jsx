@@ -11,19 +11,6 @@
 import React from "react";
 
 /**
- * Desk image
- *
- * Below is a sample desk image. Feel free to update this to an image of your choice,
- * updating below imageAltText to string that represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a photo you
- * freely use on your site.
- */
-import image from "../images/design-desk.jpeg";
-
-const imageAltText = "desktop with books and laptop";
-
-/**
  * Project list
  *
  * An array of objects that will be used to display for your project
@@ -31,53 +18,91 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Solar Panel Optimization System",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Intelligent solar tracking system featuring 180° bi-directional rotation for maximum energy capture. Built with ESP32 microcontroller, this IoT solution enables real-time remote monitoring and automated panel adjustment through a custom Android application. Combines hardware innovation with software intelligence.",
+    url: "https://github.com/hridaydevkar/solar-panel-optimization",
   },
   {
-    title: "Web Development for Beginners",
+    title: "E-Voting System using Blockchain",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Next-generation electronic voting platform that ensures transparency and security through blockchain technology. Features multi-factor authentication with facial recognition and OTP, real-time result tracking, comprehensive admin controls, and immutable audit trails. Built for democratic integrity.",
+    url: "https://github.com/hridaydevkar/voting_system",
   },
   {
-    title: "My Resume Site",
+    title: "Emotion Recognition System",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Advanced AI-powered system that analyzes facial expressions to detect and classify emotions in real-time. Leverages deep learning models with OpenCV for accurate emotion detection. Applications in customer experience, healthcare, and human-computer interaction.",
+    url: "https://github.com/hridaydevkar/emotion-recognition",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: " Credit Card Fraud Detection",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Machine learning solution designed to identify fraudulent transactions and suspicious patterns in financial data. Implements ensemble learning algorithms with scikit-learn to provide real-time risk assessment. Helps businesses protect against financial fraud with intelligent pattern recognition.",
+    url: "https://github.com/hridaydevkar/fraud-detection",
   },
 ];
 
 const Portfolio = () => {
+  const techStacks = {
+    "Solar Panel Optimization System": ["ESP32", "IoT", "Android", "Java", "C++"],
+    "E-Voting System using Blockchain": ["Flask", "PostgreSQL", "Blockchain", "Face Recognition", "Python"],
+    "Emotion Recognition System": ["Python", "OpenCV", "TensorFlow", "Machine Learning"],
+    "Credit Card Fraud Detection": ["Python", "scikit-learn", "pandas", "Machine Learning"],
+  };
+
   return (
-    <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
-        </div>
-        <div className="container">
-          {projectList.map((project) => (
-            <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              </a>
-              <p className="small">{project.description}</p>
+    <section className="padding" id="portfolio" style={{
+      background: 'transparent',
+      minHeight: '100vh',
+      padding: '100px 150px',
+      maxWidth: '1600px',
+      margin: '0 auto'
+    }}>
+      <h2 style={{
+        fontSize: '48px',
+        fontWeight: '800',
+        marginBottom: '40px',
+        background: 'linear-gradient(135deg, #64C8FF, #50B4FF)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text'
+      }}>My Projects</h2>
+      
+      <div style={{ 
+        display: 'grid',
+        gap: '30px',
+        marginTop: '50px'
+      }}>
+        {projectList.map((project, index) => (
+          <div className="card" key={project.title} style={{
+            padding: '2.5rem',
+            position: 'relative',
+            animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
+          }}>
+            <div style={{ marginBottom: '1rem' }}>
+              <h3 style={{ 
+                fontSize: '26px',
+                marginBottom: '15px',
+                color: '#ffffff',
+                fontWeight: '700'
+              }}>{project.title}</h3>
             </div>
-          ))}
-        </div>
+            
+            <p style={{ 
+              color: '#b0b0b0',
+              lineHeight: '1.8',
+              marginBottom: '25px',
+              fontSize: '16px'
+            }}>{project.description}</p>
+            
+            <div>
+              {techStacks[project.title]?.map((tech) => (
+                <span key={tech} className="tech-badge">{tech}</span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

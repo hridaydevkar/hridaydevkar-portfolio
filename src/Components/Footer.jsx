@@ -47,17 +47,55 @@ const Footer = (props) => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        gap: "2.5rem",
-        padding: "5rem 0 3rem",
-        backgroundColor: primaryColor,
-        width: "100vw"
+        gap: "2rem",
+        padding: "100px 150px 50px",
+        background: "transparent",
+        width: "100vw",
+        maxWidth: '1600px',
+        margin: '0 auto'
       }}
     >
+      <h2 style={{
+        fontSize: '48px',
+        fontWeight: '800',
+        marginBottom: '20px',
+        background: 'linear-gradient(135deg, #64C8FF, #50B4FF)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
+        textAlign: 'center'
+      }}>Ready to Collaborate?</h2>
+      
+      <p style={{
+        textAlign: 'center',
+        maxWidth: '600px',
+        fontSize: '18px',
+        color: '#b0b0b0',
+        marginBottom: '30px',
+        lineHeight: '1.8'
+      }}>
+        Open to contract work, technical consulting, or full-time opportunities. If you're building something interesting and need an extra pair of hands, let's talk.
+      </p>
+      
+      <a href={`mailto:${email}`} style={{
+        padding: '16px 40px',
+        borderRadius: '50px',
+        color: '#000',
+        background: 'linear-gradient(135deg, #64C8FF, #50B4FF)',
+        fontSize: '15px',
+        fontFamily: '"Inter", sans-serif',
+        fontWeight: '600',
+        transition: 'all 0.3s',
+        display: 'inline-block',
+        marginBottom: '40px',
+        boxShadow: '0 4px 15px rgba(100, 200, 255, 0.3)'
+      }}>Start a Conversation</a>
       <div
         style={{
           display: "flex",
           justifyContent: "center",
-          gap: "2.5rem",
+          gap: "2rem",
+          flexWrap: "wrap"
         }}
       >
         {email && (
@@ -113,9 +151,24 @@ const Footer = (props) => {
           </a>
         )}
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
-        Created by {name}
-      </p>
+      
+      <div style={{ marginTop: '50px', textAlign: 'center' }}>        <p style={{ 
+          fontFamily: '"Inter", sans-serif',
+          fontSize: '14px',
+          color: '#808080',
+          fontWeight: '500'
+        }}>
+          Designed & Crafted by {name}
+        </p>
+        <p style={{ 
+          fontFamily: '"Inter", sans-serif',
+          fontSize: '12px',
+          color: '#606060',
+          marginTop: '10px'
+        }}>
+          © 2026 · All Rights Reserved
+        </p>
+      </div>
     </div>
   );
 };
