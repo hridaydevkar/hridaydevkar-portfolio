@@ -27182,7 +27182,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Components/Experience":"kFXFf"}],"kouZu":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Experience":"kFXFf","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kouZu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$17a8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27579,7 +27579,7 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
             flexDirection: "column",
             alignItems: "center",
             gap: "2rem",
-            padding: "100px 150px 50px",
+            padding: "clamp(40px, 10vw, 100px) clamp(20px, 8vw, 150px) clamp(30px, 5vw, 50px)",
             background: "transparent",
             width: "100vw",
             maxWidth: "1600px",
@@ -27588,14 +27588,15 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 style: {
-                    fontSize: "48px",
+                    fontSize: "clamp(28px, 6vw, 48px)",
                     fontWeight: "800",
-                    marginBottom: "20px",
+                    marginBottom: "clamp(10px, 3vw, 20px)",
                     background: "linear-gradient(135deg, #64C8FF, #50B4FF)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
-                    textAlign: "center"
+                    textAlign: "center",
+                    lineHeight: "1.2"
                 },
                 children: "Ready to Collaborate?"
             }, void 0, false, {
@@ -27607,44 +27608,47 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                 style: {
                     textAlign: "center",
                     maxWidth: "600px",
-                    fontSize: "18px",
+                    fontSize: "clamp(15px, 3.5vw, 18px)",
                     color: "#b0b0b0",
-                    marginBottom: "30px",
-                    lineHeight: "1.8"
+                    marginBottom: "clamp(20px, 4vw, 30px)",
+                    lineHeight: "1.8",
+                    padding: "0 20px"
                 },
                 children: "Open to contract work, technical consulting, or full-time opportunities. If you're building something interesting and need an extra pair of hands, let's talk."
             }, void 0, false, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 69,
+                lineNumber: 70,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: `mailto:${email}`,
                 style: {
-                    padding: "16px 40px",
+                    padding: "clamp(12px, 2.5vw, 16px) clamp(28px, 6vw, 40px)",
                     borderRadius: "50px",
                     color: "#000",
                     background: "linear-gradient(135deg, #64C8FF, #50B4FF)",
-                    fontSize: "15px",
+                    fontSize: "clamp(14px, 3vw, 15px)",
                     fontFamily: '"Inter", sans-serif',
                     fontWeight: "600",
                     transition: "all 0.3s",
                     display: "inline-block",
-                    marginBottom: "40px",
-                    boxShadow: "0 4px 15px rgba(100, 200, 255, 0.3)"
+                    marginBottom: "clamp(30px, 5vw, 40px)",
+                    boxShadow: "0 4px 15px rgba(100, 200, 255, 0.3)",
+                    textDecoration: "none"
                 },
                 children: "Start a Conversation"
             }, void 0, false, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 80,
+                lineNumber: 82,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
                     display: "flex",
                     justifyContent: "center",
-                    gap: "2rem",
-                    flexWrap: "wrap"
+                    gap: "clamp(1rem, 3vw, 2rem)",
+                    flexWrap: "wrap",
+                    padding: "0 20px"
                 },
                 children: [
                     email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27655,12 +27659,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 103,
+                            lineNumber: 107,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 102,
+                        lineNumber: 106,
                         columnNumber: 11
                     }, undefined),
                     devDotTo && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27673,12 +27677,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 108,
+                            lineNumber: 112,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 107,
+                        lineNumber: 111,
                         columnNumber: 11
                     }, undefined),
                     gitHub && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27691,12 +27695,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 113,
+                            lineNumber: 117,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 112,
+                        lineNumber: 116,
                         columnNumber: 11
                     }, undefined),
                     instagram && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27709,12 +27713,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 122,
+                            lineNumber: 126,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 117,
+                        lineNumber: 121,
                         columnNumber: 11
                     }, undefined),
                     linkedIn && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27727,12 +27731,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 131,
+                            lineNumber: 135,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 126,
+                        lineNumber: 130,
                         columnNumber: 11
                     }, undefined),
                     medium && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27745,12 +27749,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 136,
+                            lineNumber: 140,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 135,
+                        lineNumber: 139,
                         columnNumber: 11
                     }, undefined),
                     twitter && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27763,12 +27767,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 141,
+                            lineNumber: 145,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 140,
+                        lineNumber: 144,
                         columnNumber: 11
                     }, undefined),
                     youTube && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27781,33 +27785,34 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 150,
+                            lineNumber: 154,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 145,
+                        lineNumber: 149,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 93,
+                lineNumber: 96,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
-                    marginTop: "50px",
-                    textAlign: "center"
+                    marginTop: "clamp(30px, 6vw, 50px)",
+                    textAlign: "center",
+                    padding: "0 20px"
                 },
                 children: [
-                    "        ",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         style: {
                             fontFamily: '"Inter", sans-serif',
-                            fontSize: "14px",
+                            fontSize: "clamp(13px, 2.5vw, 14px)",
                             color: "#808080",
-                            fontWeight: "500"
+                            fontWeight: "500",
+                            margin: "0"
                         },
                         children: [
                             "Designed & Crafted by ",
@@ -27815,26 +27820,27 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 155,
-                        columnNumber: 71
+                        lineNumber: 163,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         style: {
                             fontFamily: '"Inter", sans-serif',
-                            fontSize: "12px",
+                            fontSize: "clamp(11px, 2vw, 12px)",
                             color: "#606060",
-                            marginTop: "10px"
+                            marginTop: "10px",
+                            margin: "10px 0 0 0"
                         },
                         children: "\xa9 2026 \xb7 All Rights Reserved"
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 163,
+                        lineNumber: 172,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 155,
+                lineNumber: 158,
                 columnNumber: 7
             }, undefined)
         ]
@@ -29816,201 +29822,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lCaEt":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ed0d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ed0d.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-/**
- * Portfolio component
- *
- * Highlights some of  your creations. These can be designs, websites,
- * open source contributions, articles you've written and more.
- *
- * This is a great area for you to to continually add to and refine
- * as you continue to learn and create.
- */ var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-/**
- * Project list
- *
- * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
- */ const projectList = [
-    {
-        title: "Solar Panel Optimization System",
-        description: "Intelligent solar tracking system featuring 180\xb0 bi-directional rotation for maximum energy capture. Built with ESP32 microcontroller, this IoT solution enables real-time remote monitoring and automated panel adjustment through a custom Android application. Combines hardware innovation with software intelligence.",
-        url: "https://github.com/hridaydevkar/solar-panel-optimization"
-    },
-    {
-        title: "E-Voting System using Blockchain",
-        description: "Next-generation electronic voting platform that ensures transparency and security through blockchain technology. Features multi-factor authentication with facial recognition and OTP, real-time result tracking, comprehensive admin controls, and immutable audit trails. Built for democratic integrity.",
-        url: "https://github.com/hridaydevkar/voting_system"
-    },
-    {
-        title: "Emotion Recognition System",
-        description: "Advanced AI-powered system that analyzes facial expressions to detect and classify emotions in real-time. Leverages deep learning models with OpenCV for accurate emotion detection. Applications in customer experience, healthcare, and human-computer interaction.",
-        url: "https://github.com/hridaydevkar/emotion-recognition"
-    },
-    {
-        title: " Credit Card Fraud Detection",
-        description: "Machine learning solution designed to identify fraudulent transactions and suspicious patterns in financial data. Implements ensemble learning algorithms with scikit-learn to provide real-time risk assessment. Helps businesses protect against financial fraud with intelligent pattern recognition.",
-        url: "https://github.com/hridaydevkar/fraud-detection"
-    }, 
-];
-const Portfolio = ()=>{
-    const techStacks = {
-        "Solar Panel Optimization System": [
-            "ESP32",
-            "IoT",
-            "Android",
-            "Java",
-            "C++"
-        ],
-        "E-Voting System using Blockchain": [
-            "Flask",
-            "PostgreSQL",
-            "Blockchain",
-            "Face Recognition",
-            "Python"
-        ],
-        "Emotion Recognition System": [
-            "Python",
-            "OpenCV",
-            "TensorFlow",
-            "Machine Learning"
-        ],
-        "Credit Card Fraud Detection": [
-            "Python",
-            "scikit-learn",
-            "pandas",
-            "Machine Learning"
-        ]
-    };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "padding",
-        id: "portfolio",
-        style: {
-            background: "transparent",
-            minHeight: "100vh",
-            padding: "100px 150px",
-            maxWidth: "1600px",
-            margin: "0 auto"
-        },
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                style: {
-                    fontSize: "48px",
-                    fontWeight: "800",
-                    marginBottom: "40px",
-                    background: "linear-gradient(135deg, #64C8FF, #50B4FF)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text"
-                },
-                children: "My Projects"
-            }, void 0, false, {
-                fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 62,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    display: "grid",
-                    gap: "30px",
-                    marginTop: "50px"
-                },
-                children: projectList.map((project, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "card",
-                        style: {
-                            padding: "2.5rem",
-                            position: "relative",
-                            animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                style: {
-                                    marginBottom: "1rem"
-                                },
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                    style: {
-                                        fontSize: "26px",
-                                        marginBottom: "15px",
-                                        color: "#ffffff",
-                                        fontWeight: "700"
-                                    },
-                                    children: project.title
-                                }, void 0, false, {
-                                    fileName: "src/Components/Portfolio.jsx",
-                                    lineNumber: 84,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 83,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                style: {
-                                    color: "#b0b0b0",
-                                    lineHeight: "1.8",
-                                    marginBottom: "25px",
-                                    fontSize: "16px"
-                                },
-                                children: project.description
-                            }, void 0, false, {
-                                fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 92,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: techStacks[project.title]?.map((tech)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "tech-badge",
-                                        children: tech
-                                    }, tech, false, {
-                                        fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 101,
-                                        columnNumber: 17
-                                    }, undefined))
-                            }, void 0, false, {
-                                fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 99,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, project.title, true, {
-                        fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 78,
-                        columnNumber: 11
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 72,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 55,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Portfolio;
-exports.default = Portfolio;
-var _c;
-$RefreshReg$(_c, "Portfolio");
-
-  $parcel$ReactRefreshHelpers$ed0d.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lW6qc":[function() {},{}],"kFXFf":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kFXFf":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8b00 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -30238,6 +30050,200 @@ $RefreshReg$(_c, "Experience");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lCaEt":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ed0d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ed0d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+/**
+ * Portfolio component
+ *
+ * Highlights some of  your creations. These can be designs, websites,
+ * open source contributions, articles you've written and more.
+ *
+ * This is a great area for you to to continually add to and refine
+ * as you continue to learn and create.
+ */ var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+/**
+ * Project list
+ *
+ * An array of objects that will be used to display for your project
+ * links section. Below is a sample, update to reflect links you'd like to highlight.
+ */ const projectList = [
+    {
+        title: "Solar Panel Optimization System",
+        description: "Intelligent solar tracking system featuring 180\xb0 bi-directional rotation for maximum energy capture. Built with ESP32 microcontroller, this IoT solution enables real-time remote monitoring and automated panel adjustment through a custom Android application. Combines hardware innovation with software intelligence.",
+        url: "https://github.com/hridaydevkar/solar-panel-optimization"
+    },
+    {
+        title: "E-Voting System using Blockchain",
+        description: "Next-generation electronic voting platform that ensures transparency and security through blockchain technology. Features multi-factor authentication with facial recognition and OTP, real-time result tracking, comprehensive admin controls, and immutable audit trails. Built for democratic integrity.",
+        url: "https://github.com/hridaydevkar/voting_system"
+    },
+    {
+        title: "Emotion Recognition System",
+        description: "Advanced AI-powered system that analyzes facial expressions to detect and classify emotions in real-time. Leverages deep learning models with OpenCV for accurate emotion detection. Applications in customer experience, healthcare, and human-computer interaction.",
+        url: "https://github.com/hridaydevkar/emotion-recognition"
+    },
+    {
+        title: " Credit Card Fraud Detection",
+        description: "Machine learning solution designed to identify fraudulent transactions and suspicious patterns in financial data. Implements ensemble learning algorithms with scikit-learn to provide real-time risk assessment. Helps businesses protect against financial fraud with intelligent pattern recognition.",
+        url: "https://github.com/hridaydevkar/fraud-detection"
+    }, 
+];
+const Portfolio = ()=>{
+    const techStacks = {
+        "Solar Panel Optimization System": [
+            "ESP32",
+            "IoT",
+            "Android",
+            "Java",
+            "C++"
+        ],
+        "E-Voting System using Blockchain": [
+            "Flask",
+            "PostgreSQL",
+            "Blockchain",
+            "Face Recognition",
+            "Python"
+        ],
+        "Emotion Recognition System": [
+            "Python",
+            "OpenCV",
+            "TensorFlow",
+            "Machine Learning"
+        ],
+        "Credit Card Fraud Detection": [
+            "Python",
+            "scikit-learn",
+            "pandas",
+            "Machine Learning"
+        ]
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "padding",
+        id: "portfolio",
+        style: {
+            background: "transparent",
+            minHeight: "100vh",
+            padding: "100px 150px",
+            maxWidth: "1600px",
+            margin: "0 auto"
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                style: {
+                    fontSize: "48px",
+                    fontWeight: "800",
+                    marginBottom: "40px",
+                    background: "linear-gradient(135deg, #64C8FF, #50B4FF)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text"
+                },
+                children: "My Projects"
+            }, void 0, false, {
+                fileName: "src/Components/Portfolio.jsx",
+                lineNumber: 62,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    display: "grid",
+                    gap: "30px",
+                    marginTop: "50px"
+                },
+                children: projectList.map((project, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "card",
+                        style: {
+                            padding: "2.5rem",
+                            position: "relative",
+                            animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    marginBottom: "1rem"
+                                },
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    style: {
+                                        fontSize: "26px",
+                                        marginBottom: "15px",
+                                        color: "#ffffff",
+                                        fontWeight: "700"
+                                    },
+                                    children: project.title
+                                }, void 0, false, {
+                                    fileName: "src/Components/Portfolio.jsx",
+                                    lineNumber: 84,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/Components/Portfolio.jsx",
+                                lineNumber: 83,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    color: "#b0b0b0",
+                                    lineHeight: "1.8",
+                                    marginBottom: "25px",
+                                    fontSize: "16px"
+                                },
+                                children: project.description
+                            }, void 0, false, {
+                                fileName: "src/Components/Portfolio.jsx",
+                                lineNumber: 92,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: techStacks[project.title]?.map((tech)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "tech-badge",
+                                        children: tech
+                                    }, tech, false, {
+                                        fileName: "src/Components/Portfolio.jsx",
+                                        lineNumber: 101,
+                                        columnNumber: 17
+                                    }, undefined))
+                            }, void 0, false, {
+                                fileName: "src/Components/Portfolio.jsx",
+                                lineNumber: 99,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, project.title, true, {
+                        fileName: "src/Components/Portfolio.jsx",
+                        lineNumber: 78,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/Components/Portfolio.jsx",
+                lineNumber: 72,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Portfolio.jsx",
+        lineNumber: 55,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Portfolio;
+exports.default = Portfolio;
+var _c;
+$RefreshReg$(_c, "Portfolio");
+
+  $parcel$ReactRefreshHelpers$ed0d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire1606")
 
 //# sourceMappingURL=index.975ef6c8.js.map
