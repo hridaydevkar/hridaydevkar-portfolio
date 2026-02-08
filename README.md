@@ -1,103 +1,71 @@
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=526682619)
+# Hriday Devkar - Portfolio
 
-# JavaScript Portfolio Site with GitHub Codespaces and Copilot
+Personal portfolio website showcasing my work, experience, and skills as a Full Stack Developer.
 
-> View these instructions in [Spanish](/translations/es/README.md) or [Portuguese](/translations/pt-BR/README.md)
+## 🚀 Live Demo
 
-_Create, customize and deploy your own portfolio website in minutes._ ✨
+Visit the live site: [https://hridaydevkar.github.io/hridaydevkar-portfolio](https://hridaydevkar.github.io/hridaydevkar-portfolio)
 
-In this template repository we have the development environment and base set and ready to go. So that you can immediately launch your [Codespace](https://github.com/features/codespaces/) environment and start customizing your site using [Copilot](https://copilot.github.com) to help you write code faster.
+## 💼 About
 
-* **Who is this for?** __Anyone__ looking to create a portfolio site, learn web development, or test out Codespaces.
-* **How much experience do you need?** __Zero__. You decide how much you want to customize based on your experience, and time available.
-* **Tools needed:** _None_. No need to install anything! All you need is a web browser.
-* **Prerequisites:** _None_. This template includes your development environment and deployable web app for you to create your own site.
+This is my personal portfolio website built with React. It features:
 
-## About this portfolio template
+- Home section with introduction
+- About me section
+- Experience timeline
+- Portfolio projects showcase
+- Contact information and social links
 
-In this "choose your own adventure" template portfolio, we have a [React](https://reactjs.org/) based web application ready for you to easily customize and deploy using only your web browser.
+## 🛠️ Technologies Used
 
-![JavaScript profile web application](/__images__/js-portfolio-site.gif "JavaScript profile web application")
+- **React** - Frontend framework
+- **Parcel** - Build tool and bundler
+- **ESLint & Prettier** - Code quality and formatting
+- **GitHub Pages** - Hosting
 
-### Quick Start
+## 🏃‍♂️ Running Locally
 
-1. Click the **Use this Template** button and then **Create a new repository** as can be seen in the image below.
-   Note: Make sure you've signed in to GitHub otherwise, you wouldn't see the **Use this Template** button.
-![JavaScript profile web application](/__images__/use-this-template.png "Use this Template Image Guide")
-1. Select the repository owner (e.g. your GitHub account)
-1. Enter a unique name for your new repository
-1. Click the **Code** button
-1. Click **Create Codespace on main** button
-1. [Customize your portfolio site](#-customize-your-site-in-3-steps) with Copilot
-1. [Deploy your site](#-deploy-your-web-application)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hridaydevkar/hridaydevkar-portfolio.git
+   cd hridaydevkar-portfolio
+   ```
 
-<details>
-   <summary><b>🎥 To learn more about Codespaces, watch our video tutorial series</b></summary>
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-   [![Codespaces Tutorial](https://img.youtube.com/vi/ozuDPmcC1io/0.jpg)](https://aka.ms/CodespacesVideoTutorial "Codespaces Tutorial")
-</details>
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-<br />
+4. Open [http://localhost:1234](http://localhost:1234) in your browser
 
-## 🗃️ JavaScript Portfolio template
+## 📦 Building for Production
 
-This repo is a GitHub template to build a JavaScript personal portfolio frontend web application using the React framework. The goal is to give you a template that you can immediately utilize to create your own website through Codespaces.
+```bash
+npm run build
+```
 
-The repo contains the following:
+## 🚀 Deployment
 
-* `/.devcontainer`
-  - `.devcontainer/Dockerfile`: Configuration file used by Codespaces to determine operating system and other details.
-  - `.devcontainer/devcontainer.json`: Configuration file used by Codespaces to configure Visual Studio Code settings, such as the enabling of additional extensions.
-* `/src`: HTML, JS and CSS files used to build your portfolio site.
-* `.eslintrc`: Settings for [ESLint](https://eslint.org/)</a> that is included for code consistency and quality.
-* `.prettierrc`: Settings for [Prettier](https://prettier.io/) that is used to format code.
-* `package.json` and `package-lock.json`: Defines the project information for [Node.js](https://nodejs.org/)</a>, dependent packages and the versions needed of each.
+Deploy to GitHub Pages:
 
-<br />
+```bash
+npm run deploy
+```
 
-## 🚀 Getting started
+## 📧 Contact
 
-This portfolio site project is filled with sample data so that you can immediately open Codespaces, see it running, and deploy at any point.
+- **Email**: hridaydevkar@gmail.com
+- **GitHub**: [@hridaydevkar](https://github.com/hridaydevkar)
+- **LinkedIn**: [hridaydevkar](https://linkedin.com/in/hridaydevkar)
 
-Your development environment is all set for you to start. Based on our [JavaScript Codespace Template (React)](https://github.com/microsoft/codespaces-teaching-template-js), here is what is already setup and ready for you to use:
+## 📄 License
 
-* Simple [React](https://reactjs.org/) application with components for each section of the portfolio site
-* [Parcel](https://parceljs.org/) in place to build your site when deploying
-* Code linting and formatting using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) for code consistency.
-
-### Create your portfolio
-
-1. Create a repository from this template. Use this [create repo link](https://github.com/microsoft/codespaces-project-template-js/generate). Select the repository owner, provide a name, a description if you'd like and if you'd like the new repository to be public or private.
-1. Before creating the Codespace, enable GitHub Copilot for your account. If it is not enabled, take a look at [Customize your portfolio site using Copilot](#-customize-your-site-in-3-steps).
-1. Navigate to the main page of the newly created repository.
-3. Under the repository name, use the Code drop-down menu, and in the Codespaces tab, select "Create codespace on main".
-
-    <img src="./__images__/createcodespace.png" alt="Create codespace" style="width:270px;"/>
-
-
-4. Wait as GitHub initializes the Codespace.
-
-    <img src="https://user-images.githubusercontent.com/82035/194710065-92f8c325-6f57-4c77-88d7-da8db3c235e9.png" alt="Codespace initializing" style="width: 600px;"/>
-
-5. When complete you will see your Codespace load with a terminal section at the bottom. Codespaces will install all the required extensions in your container, followed by executing `npm install`. Once the package installs are completed, Codespaces will execute `npm start` to start your web application running within your Codespace.
-
-   When the web application has successfully started you will see a message in the terminal that the server is running on port 1234 within your Codespace:
-
-   <img src="https://user-images.githubusercontent.com/82035/220460347-605293ba-d3d1-483a-8157-71eaabb7ef52.png" alt="Web application started on port 1234" style="width: 300px;"/>
-
-<br />
-
-## ✨ Customize your site in 3 steps
-
-This project is built to be easily customizable. Each section of the site is a separate component, and your information needs to be set in only one spot. This is not only for ease of updating, but so you can see how prop values are passed to React components.
-
-For each step, open the project in Codespaces, then you can make and commit your changes while within your Codespace.
-
-> See [Using source control in your codespace](https://docs.github.com/en/codespaces/developing-in-codespaces/using-source-control-in-your-codespace) for more Codespaces source control how-tos
-
-### 1️⃣ Add your "About me" and social accounts
-
-Within `/src/App.jsx` you will see a variable called `siteProps`. This is a JavaScript object that hold the key value pairs needed to customize your name, title, email, and social accounts.
+MIT License - see [LICENSE](LICENSE) file for details
 
 ```javascript
 const siteProps = {
